@@ -7,3 +7,6 @@
 [submodule "wasteBot"] 
   path = wasteBot 
   url = https://github.com/lopugit/wasteBot
+[submodule "wasteScraper"] 
+  path = wasteScraper 
+  url = https://github.com/lopugit/wasteScraper
