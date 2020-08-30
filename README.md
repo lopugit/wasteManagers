@@ -6,3 +6,6 @@ This chatbot will take your images and give your instructions on how to recycle 
 
 ### hint
 You can also just send text based messages and it will analyze any text too!
+
+## Try it today
+https://m.me/WasteeAI
