@@ -1,9 +1,6 @@
 [submodule "wasteAPI"] 
   path = wasteAPI 
   url = https://github.com/lopugit/wasteAPI
-[submodule "wasteAI"] 
-  path = wasteAI 
-  url = https://github.com/lopugit/wasteAI
 [submodule "wasteBot"] 
   path = wasteBot 
   url = https://github.com/lopugit/wasteBot
