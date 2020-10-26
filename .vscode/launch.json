@@ -7,7 +7,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Debug wasteBOT",
+			"name": "Debug wasteBot",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -30,6 +30,64 @@
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}/wasteScraper/scraper/dbSync.js"
-		}
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "All wasteBot Tests",
+			"program": "${workspaceFolder}/wasteBot/node_modules/mocha/bin/_mocha",
+			"args": [
+				"-u",
+				"bdd",
+				"--timeout",
+				"999999",
+				"--colors",
+				"--recursive",
+				"${workspaceFolder}/wasteBot/bot/tests/"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"skipFiles": [
+				// "<node_internals>/**"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "All MongoDB Tests",
+			"program": "${workspaceFolder}/wasteBot/node_modules/mocha/bin/_mocha",
+			"args": [
+				"-u",
+				"bdd",
+				"--timeout",
+				"999999",
+				"--colors",
+				"--recursive",
+				"${workspaceFolder}/wasteBot/bot/tests/mongoDB.js"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"skipFiles": [
+				// "<node_internals>/**"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "All FbAPI Tests",
+			"program": "${workspaceFolder}/wasteBot/node_modules/mocha/bin/_mocha",
+			"args": [
+				"-u",
+				"bdd",
+				"--timeout",
+				"999999",
+				"--colors",
+				"--recursive",
+				"${workspaceFolder}/wasteBot/bot/tests/fbAPI.js"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"skipFiles": [
+				// "<node_internals>/**"
+			]
+		},
+		
 	]
 }
